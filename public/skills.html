@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills - CaliTrack</title>
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/skills.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand"><a href="dashboard.html">CaliTrack</a></div>
+            <a href="dashboard.html" class="nav-link">Dashboard</a>
+            <a href="workouts.html" class="nav-link">Workouts</a>
+            <a href="skills.html" class="nav-link active">Skills</a>
+            <a href="nutrition.html" class="nav-link">Nutrition</a>
+            <a href="about.html" class="nav-link">About</a>
+            <button onclick="logout()" class="logout-btn">Logout</button>
+        </div>
+    </nav>
+
+    <div class="skills-container">
+        <div class="skills-header">
+            <h1>Overcoming Gravity 2 Skills</h1>
+            <p class="subtitle">Complete Progression Charts</p>
+        </div>
+
+        <!-- Main Category Tabs -->
+        <div class="skill-tabs">
+            <button class="tab-btn active" data-category="handstand">Handstand</button>
+            <button class="tab-btn" data-category="pushing">Pushing</button>
+            <button class="tab-btn" data-category="pulling">Pulling</button>
+            <button class="tab-btn" data-category="legs">Legs</button>
+            <button class="tab-btn" data-category="core">Core</button>
+        </div>
+
+        <!-- ==================== HANDSTAND CHART ==================== -->
+        <div id="handstand" class="category-content active">
+            <div class="skill-chart">
+                <div class="chart-row header">
+                    <div class="cell">Level</div>
+                    <div class="cell">Handstand</div>
+                    <div class="cell">Handstand Pushup</div>
+                    <div class="cell">Press Handstand</div>
+                    <div class="cell">Rings Handstand</div>
+                    <div class="cell">Rings HSPU</div>
+                    <div class="cell">Press to Rings</div>
+                    <div class="cell">Straight Arm Press</div>
+                    <div class="cell">L/V-Sit to HS</div>
+                    <div class="cell">Manna</div>
+                </div>
+                <div class="chart-row">
+                    <div class="cell level">1</div>
+                    <div class="cell">Wall Plank (30s)</div>
+                    <div class="cell">Pike Pushup (3x8)</div>
+                    <div class="cell">-</div>
+                    <div class="cell">Support Hold (30s)</div>
+                    <div class="cell">RTO Support (15s)</div>
+                    <div class="cell">-</div>
+                    <div class="cell">-</div>
+                    <div class="cell">Floor Tuck L-Sit</div>
+                    <div class="cell">Tuck L-sit</div>
+                </div>
+                <div class="chart-row">
+                    <div class="cell level">2</div>
+                    <div class="cell">Chest to Wall (30s)</div>
+                    <div class="cell">Elevated Pike (3x8)</div>
+                    <div class="cell">-</div>
+                    <div class="cell">Frog Stand (15s)</div>
+                    <div class="cell">Ring Dips (3x8)</div>
+                    <div class="cell">-</div>
+                    <div class="cell">-</div>
+                    <div class="cell">One Leg L-Sit</div>
+                    <div class="cell">1 Leg Bent L-sit</div>
+                </div>
+                <div class="chart-row">
+                    <div class="cell level">3</div>
+                    <div class="cell">Wall HS (60s)</div>
+                    <div class="cell">Wall HSPU (3x5)</div>
+                    <div class="cell">Stomach Wall Press</div>
+                    <div class="cell">HS on Rings (10s)</div>
+                    <div class="cell">Wall Ring HSPU</div>
+                    <div class="cell">-</div>
+                    <div class="cell">-</div>
+                    <div class="cell">Full L-Sit</div>
+                    <div class="cell">L-sit</div>
+                </div>
+                <div class="chart-row">
+                    <div class="cell level">4</div>
+                    <div class="cell">Freestanding (10s)</div>
+                    <div class="cell">Full ROM HSPU</div>
+                    <div class="cell">Box Press</div>
+                    <div class="cell">Ring HS (30s)</div>
+                    <div class="cell">RTO HSPU</div>
+                    <div class="cell">Press to Support</div>
+                    <div class="cell">-</div>
+                    <div class="cell">V-Sit (90°)</div>
+                    <div class="cell">RTO L-sit</div>
+                </div>
+                <div class="chart-row">
+                    <div class="cell level">5</div>
+                    <div class="cell">Freestanding (30s)</div>
+                    <div class="cell">Freestanding HSPU</div>
+                    <div class="cell">Stalder Press</div>
+                    <div class="cell">Ring Press HS</div>
+                    <div class="cell">Straddle HSPU</div>
+                    <div class="cell">Press to L-Sit</div>
+                    <div class="cell">-</div>
+                    <div class="cell">High V-Sit</div>
+                    <div class="cell">45 deg V-sit</div>
+                </div>
+                <div class="chart-row">
+                    <div class="cell level">6</div>
+                    <div class="cell">Walking (10 steps)</div>
+                    <div class="cell">90° Pushup</div>
+                    <div class="cell">Straddle Press</div>
+                    <div class="cell">Ring Straddle Press</div>
+                    <div class="cell">Full Ring HSPU</div>
+                    <div class="cell">Press to Handstand</div>
+                    <div class="cell">-</div>
+                    <div class="cell">Middle Split Hold</div>
+                    <div class="cell">90 deg V-sit</div>
+                </div>
+                <div class="chart-row">
+                    <div class="cell level">7</div>
+                    <div class="cell">One Arm HS (5s)</div>
+                    <div class="cell">One Arm HSPU</div>
+                    <div class="cell">Full Press</div>
+                    <div class="cell">One Arm Ring HS</div>
+                    <div class="cell">-</div>
+                    <div class="cell">Press to One Arm</div>
+                    <div class="cell">-</div>
+                    <div class="cell">Straddle L</div>
+                    <div class="cell">i-sit</div>
+                </div>
+                <div class="chart-row">
+                    <div class="cell level">8</div>
+                    <div class="cell">One Arm HS (30s)</div>
+                    <div class="cell">90° One Arm</div>
+                    <div class="cell">Full Press +</div>
+                    <div class="cell">Full Planche Press</div>
+                    <div class="cell">-</div>
+                    <div class="cell">Press to One Arm HS</div>
+                    <div class="cell">-</div>
+                    <div class="cell">Middle Split L</div>
+                    <div class="cell">Manna Prep</div>
+                </div>
+                <div class="chart-row">
+                    <div class="cell level">9</div>
+                    <div class="cell">-</div>
+                    <div class="cell">-</div>
+                    <div class="cell">-</div>
+                    <div class="cell">-</div>
+                    <div class="cell">-</div>
+                    <div class="cell">-</div>
+                    <div class="cell">-</div>
+                    <div class="cell">V-Sit to Manna</div>
+                    <div class="cell">Manna</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ==================== PUSHING CHART ==================== -->
+        <div id="pushing" class="category-content">
+            <div class="skill-chart">
+                <div class="chart-row header">
+                    <div class="cell">Level</div>
+                    <div class="cell">Pushups</div>
+                    <div class="cell">Dips</div>
+                    <div class="cell">Planche</div>
+                    <div class="cell">Ring Pushups</div>
+                    <div class="cell">Ring Dips</div>
+                    <div class="cell">Ring Planche</div>
+                    <div class="cell">90° Pushup</div>
+                    <div class="cell">Inverted Cross</div>
+                </div>
+                <div class="chart-row">
+                    <div class="cell level">1</div>
+                    <div class="cell">Pushups (3x8)</div>
+                    <div class="cell">Parallel Dips</div>
+                    <div class="cell">Planche Lean</div>
+                    <div class="cell">Ring Pushups</div>
+                    <div class="cell">Bulgarian Dips</div>
+                    <div class="cell">Support Hold</div>
+                    <div class="cell">-</div>
+                    <div class="cell">-</div>
+                </div>
+                <div class="chart-row">
+                    <div class="cell level">2</div>
+                    <div class="cell">Decline Pushups</div>
+                    <div class="cell">Deep Dips</div>
+                    <div class="cell">Adv PL Lean</div>
+                    <div class="cell">RTO Pushups</div>
+                    <div class="cell">Ring Dips</div>
+                    <div class="cell">RTO Support</div>
+                    <div class="cell">-</div>
+                    <div class="cell">-</div>
+                </div>
+                <div class="chart-row">
+                    <div class="cell level">3</div>
+                    <div class="cell">PPP (3x8)</div>
+                    <div class="cell">Weighted Dips</div>
+                    <div class="cell">Tuck Planche</div>
+                    <div class="cell">Archer Pushups</div>
+                    <div class="cell">L-Sit Ring Dips</div>
+                    <div class="cell">Tuck PL on Rings</div>
+                    <div class="cell">-</div>
+                    <div class="cell">-</div>
+                </div>
+                <div class="chart-row">
+                    <div class="cell level">4</div>
+                    <div class="cell">RTO Pushups</div>
+                    <div class="cell">Ring Bulgarian</div>
+                    <div class="cell">Adv Tuck PL</div>
+                    <div class="cell">One Arm Pushup</div>
+                    <div class="cell">RTO Ring Dips</div>
+                    <div class="cell">Adv Tuck on Rings</div>
+                    <div class="cell">-</div>
+                    <div class="cell">-</div>
+                </div>
+                <div class="chart-row">
+                    <div class="cell level">5</div>
+                    <div class="cell">One Arm Pushup</div>
+                    <div class="cell">Korean Dips</div>
+                    <div class="cell">Straddle PL</div>
+                    <div class="cell">Weighted OA</div>
+                    <div class="cell">Straddle Dips</div>
+                    <div class="cell">Straddle PL Rings</div>
+                    <div class="cell">-</div>
+                    <div class="cell">-</div>
+                </div>
+                <div class="chart-row">
+                    <div class="cell level">6</div>
+                    <div class="cell">-</div>
+                    <div class="cell">-</div>
+                    <div class="cell">Full Planche</div>
+                    <div class="cell">-</div>
+                    <div class="cell">-</div>
+                    <div class="cell">Full PL on Rings</div>
+                    <div class="cell">90° Pushup</div>
+                    <div class="cell">Inverted Cross</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ==================== PULLING CHART ==================== -->
+        <div id="pulling" class="category-content">
+            <div class="skill-chart">
+                <div class="chart-row header">
+                    <div class="cell">Level</div>
+                    <div class="cell">Pullups</div>
+                    <div class="cell">Front Lever</div>
+                    <div class="cell">Back Lever</div>
+                    <div class="cell">Muscle Up</div>
+                    <div class="cell">One Arm Pullup</div>
+                    <div class="cell">Iron Cross</div>
+                    <div class="cell">Victorian</div>
+                    <div class="cell">Rings Pull</div>
+                </div>
+                <div class="chart-row">
+                    <div class="cell level">1</div>
+                    <div class="cell">Pullups (3x8)</div>
+                    <div class="cell">Tuck FL</div>
+                    <div class="cell">German Hang</div>
+                    <div class="cell">-</div>
+                    <div class="cell">-</div>
+                    <div class="cell">Support Hold</div>
+                    <div class="cell">-</div>
+                    <div class="cell">Ring Rows</div>
+                </div>
+                <div class="chart-row">
+                    <div class="cell level">2</div>
+                    <div class="cell">Wide Pullups</div>
+                    <div class="cell">Adv Tuck FL</div>
+                    <div class="cell">Skin the Cat</div>
+                    <div class="cell">MU Negatives</div>
+                    <div class="cell">Weighted Pullups</div>
+                    <div class="cell">Cross Pullouts</div>
+                    <div class="cell">-</div>
+                    <div class="cell">Ring Pullups</div>
+                </div>
+                <div class="chart-row">
+                    <div class="cell level">3</div>
+                    <div class="cell">L-Sit Pullups</div>
+                    <div class="cell">One Leg FL</div>
+                    <div class="cell">Tuck BL</div>
+                    <div class="cell">Kipping MU</div>
+                    <div class="cell">Towel Assisted</div>
+                    <div class="cell">Assisted Cross</div>
+                    <div class="cell">-</div>
+                    <div class="cell">L-Sit Ring Pull</div>
+                </div>
+                <div class="chart-row">
+                    <div class="cell level">4</div>
+                    <div class="cell">Weighted Pullups</div>
+                    <div class="cell">Straddle FL</div>
+                    <div class="cell">Adv Tuck BL</div>
+                    <div class="cell">Strict MU</div>
+                    <div class="cell">Archer Pullups</div>
+                    <div class="cell">Straddle Cross</div>
+                    <div class="cell">-</div>
+                    <div class="cell">RTO Pullups</div>
+                </div>
+                <div class="chart-row">
+                    <div class="cell level">5</div>
+                    <div class="cell">Typewriter</div>
+                    <div class="cell">Half FL</div>
+                    <div class="cell">Straddle BL</div>
+                    <div class="cell">Wide MU</div>
+                    <div class="cell">Negative OAP</div>
+                    <div class="cell">Straddle IC</div>
+                    <div class="cell">Victorian Lean</div>
+                    <div class="cell">Ring Archer Pull</div>
+                </div>
+                <div class="chart-row">
+                    <div class="cell level">6</div>
+                    <div class="cell">Archer Pullups</div>
+                    <div class="cell">Full FL</div>
+                    <div class="cell">Full BL</div>
+                    <div class="cell">Strict Bar MU</div>
+                    <div class="cell">One Arm Pullup</div>
+                    <div class="cell">Iron Cross</div>
+                    <div class="cell">Full Victorian</div>
+                    <div class="cell">One Arm Ring Pull</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ==================== LEGS CHART ==================== -->
+        <div id="legs" class="category-content">
+            <div class="skill-chart">
+                <div class="chart-row header">
+                    <div class="cell">Level</div>
+                    <div class="cell">Squats</div>
+                    <div class="cell">Pistol Squat</div>
+                    <div class="cell">Shrimp Squat</div>
+                    <div class="cell">Nordic Curl</div>
+                    <div class="cell">Sissy Squat</div>
+                    <div class="cell">Jumping</div>
+                    <div class="cell">Weighted</div>
+                    <div class="cell">Natural Ham</div>
+                </div>
+                <div class="chart-row">
+                    <div class="cell level">1</div>
+                    <div class="cell">Parallel Squat</div>
+                    <div class="cell">-</div>
+                    <div class="cell">Beginner Shrimp</div>
+                    <div class="cell">Glute Bridge</div>
+                    <div class="cell">-</div>
+                    <div class="cell">Tuck Jumps</div>
+                    <div class="cell">-</div>
+                    <div class="cell">2 Leg Slide</div>
+                </div>
+                <div class="chart-row">
+                    <div class="cell level">2</div>
+                    <div class="cell">Full Squat</div>
+                    <div class="cell">Box Pistol</div>
+                    <div class="cell">Intermediate Shrimp</div>
+                    <div class="cell">2 Leg Nordic</div>
+                    <div class="cell">Sissy Squat</div>
+                    <div class="cell">Pogos</div>
+                    <div class="cell">-</div>
+                    <div class="cell">1 Leg Slide</div>
+                </div>
+                <div class="chart-row">
+                    <div class="cell level">3</div>
+                    <div class="cell">Side to Side</div>
+                    <div class="cell">Assisted Pistol</div>
+                    <div class="cell">Advanced Shrimp</div>
+                    <div class="cell">1 Leg Nordic</div>
+                    <div class="cell">Elevated Sissy</div>
+                    <div class="cell">Box Jumps</div>
+                    <div class="cell">-</div>
+                    <div class="cell">Slow Eccentric</div>
+                </div>
+                <div class="chart-row">
+                    <div class="cell level">4</div>
+                    <div class="cell">Bulgarian Split</div>
+                    <div class="cell">Full Pistol</div>
+                    <div class="cell">2 Hand Shrimp</div>
+                    <div class="cell">Full Nordic</div>
+                    <div class="cell">Weighted Sissy</div>
+                    <div class="cell">Broad Jumps</div>
+                    <div class="cell">Weighted Pistol</div>
+                    <div class="cell">Full NHC</div>
+                </div>
+                <div class="chart-row">
+                    <div class="cell level">5</div>
+                    <div class="cell">Deep Squat</div>
+                    <div class="cell">Weighted Pistol</div>
+                    <div class="cell">Elevated Shrimp</div>
+                    <div class="cell">-</div>
+                    <div class="cell">-</div>
+                    <div class="cell">Depth Jumps</div>
+                    <div class="cell">1.2x BW Pistol</div>
+                    <div class="cell">-</div>
+                </div>
+                <div class="chart-row">
+                    <div class="cell level">6</div>
+                    <div class="cell">-</div>
+                    <div class="cell">1.5x BW Pistol</div>
+                    <div class="cell">Weighted Shrimp</div>
+                    <div class="cell">-</div>
+                    <div class="cell">-</div>
+                    <div class="cell">-</div>
+                    <div class="cell">1.8x BW Pistol</div>
+                    <div class="cell">-</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ==================== CORE CHART ==================== -->
+        <div id="core" class="category-content">
+            <div class="skill-chart">
+                <div class="chart-row header">
+                    <div class="cell">Level</div>
+                    <div class="cell">Plank</div>
+                    <div class="cell">L-Sit</div>
+                    <div class="cell">Dragon Flag</div>
+                    <div class="cell">Human Flag</div>
+                    <div class="cell">Ab Wheel</div>
+                    <div class="cell">V-Sit</div>
+                    <div class="cell">Manna</div>
+                    <div class="cell">Hanging Legs</div>
+                </div>
+                <div class="chart-row">
+                    <div class="cell level">1</div>
+                    <div class="cell">Front Plank (60s)</div>
+                    <div class="cell">Foot Support</div>
+                    <div class="cell">Floor Tuck</div>
+                    <div class="cell">-</div>
+                    <div class="cell">Knees Rollout</div>
+                    <div class="cell">-</div>
+                    <div class="cell">-</div>
+                    <div class="cell">Floor Tucks</div>
+                </div>
+                <div class="chart-row">
+                    <div class="cell level">2</div>
+                    <div class="cell">Side Plank (45s)</div>
+                    <div class="cell">One Leg L-Sit</div>
+                    <div class="cell">Full Tuck DF</div>
+                    <div class="cell">Tuck Flag</div>
+                    <div class="cell">Full Rollout</div>
+                    <div class="cell">Tuck V-Sit</div>
+                    <div class="cell">-</div>
+                    <div class="cell">Bent Knee Raise</div>
+                </div>
+                <div class="chart-row">
+                    <div class="cell level">3</div>
+                    <div class="cell">Reverse Plank</div>
+                    <div class="cell">Full L-Sit</div>
+                    <div class="cell">Tuck Eccentric</div>
+                    <div class="cell">Adv Tuck Flag</div>
+                    <div class="cell">Decline Rollout</div>
+                    <div class="cell">Low V-Sit</div>
+                    <div class="cell">-</div>
+                    <div class="cell">Hanging Knee Raise</div>
+                </div>
+                <div class="chart-row">
+                    <div class="cell level">4</div>
+                    <div class="cell">-</div>
+                    <div class="cell">High L-Sit</div>
+                    <div class="cell">Adv Tuck DF</div>
+                    <div class="cell">Straddle Flag</div>
+                    <div class="cell">Weighted Rollout</div>
+                    <div class="cell">V-Sit (90°)</div>
+                    <div class="cell">-</div>
+                    <div class="cell">Toes to Bar</div>
+                </div>
+                <div class="chart-row">
+                    <div class="cell level">5</div>
+                    <div class="cell">-</div>
+                    <div class="cell">Middle Split Hold</div>
+                    <div class="cell">One Leg DF</div>
+                    <div class="cell">Half Flag</div>
+                    <div class="cell">Ab Wheel +10kg</div>
+                    <div class="cell">High V-Sit</div>
+                    <div class="cell">-</div>
+                    <div class="cell">Windshield Wipers</div>
+                </div>
+                <div class="chart-row">
+                    <div class="cell level">6</div>
+                    <div class="cell">-</div>
+                    <div class="cell">Middle Split L</div>
+                    <div class="cell">Full DF</div>
+                    <div class="cell">Full Flag</div>
+                    <div class="cell">Ab Wheel +20kg</div>
+                    <div class="cell">Straddle V</div>
+                    <div class="cell">Manna Prep</div>
+                    <div class="cell">360° HLR</div>
+                </div>
+                <div class="chart-row">
+                    <div class="cell level">7</div>
+                    <div class="cell">-</div>
+                    <div class="cell">Straddle L</div>
+                    <div class="cell">-</div>
+                    <div class="cell">One Arm Flag</div>
+                    <div class="cell">Ab Wheel +40kg</div>
+                    <div class="cell">Middle Split V</div>
+                    <div class="cell">Manna</div>
+                    <div class="cell">-</div>
+                </div>
+            </div>
+        </div>
+
+    <script src="js/auth.js"></script>
+    <script src="js/skills.js"></script>
+</body>
+</html>

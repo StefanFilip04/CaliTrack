@@ -1,0 +1,65 @@
+/* NAVBAR - SAME ON EVERY PAGE */
+.navbar {
+    background: #111214;
+    border-bottom: 1px solid #2b2d31;
+    padding: 16px 32px;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+}
+
+.nav-brand {
+    margin-right: auto;
+}
+
+.nav-brand a {
+    color: #9955bb;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-link {
+    color: #dbdee1;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    transition: all 0.3s;
+}
+
+.nav-link:hover, .nav-link.active {
+    background: #2b2d31;
+    color: #9955bb;
+}
+
+.logout-btn {
+    background: #9955bb;
+    color: #ffffff;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    margin-left: auto;
+    transition: all 0.3s;
+}
+
+.logout-btn:hover {
+    background: #aa66cc;
+}
+
+@media (max-width: 768px) {
+    .nav-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .logout-btn {
+        margin-left: 0;
+    }
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workouts - CaliTrack</title>
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/workouts.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand"><a href="dashboard.html">CaliTrack</a></div>
+            <a href="dashboard.html" class="nav-link">Dashboard</a>
+            <a href="workouts.html" class="nav-link active">Workouts</a>
+            <a href="skills.html" class="nav-link">Skills</a>
+            <a href="nutrition.html" class="nav-link">Nutrition</a>
+            <a href="about.html" class="nav-link">About</a>
+            <button onclick="logout()" class="logout-btn">Logout</button>
+        </div>
+    </nav>  
+
+    <div class="container">
+        <h1>My Workouts</h1>
+        
+        <div class="add-workout">
+            <input type="text" id="workoutName" placeholder="Workout name (e.g., Upper Body)">
+            <button id="addWorkoutBtn">+ Add Workout</button>
+        </div>
+
+        <div id="workoutsList"></div>
+    </div>
+
+    <div id="exerciseModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modalTitle">Add Exercise</h3>
+                <span class="close" onclick="closeModal()">&times;</span>
+            </div>
+            <div class="modal-body">
+                <input type="text" id="exerciseName" placeholder="Exercise name">
+                <input type="number" id="exerciseSets" placeholder="Sets">
+                <input type="number" id="exerciseReps" placeholder="Reps">
+                <button id="saveExerciseBtn">Add Exercise</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/auth.js"></script>
+    <script src="js/workouts.js"></script>
+</body>
+</html>
