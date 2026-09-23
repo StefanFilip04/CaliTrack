@@ -2,7 +2,7 @@
     window.location.href = 'login.html';
 }
 
-const API = 'https://calisthenics-app-rnsz.onrender.com';
+const API = '';
 const token = localStorage.getItem('token');
 
 async function loadWorkouts() {

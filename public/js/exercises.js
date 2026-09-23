@@ -2,7 +2,7 @@ if (!localStorage.getItem('token')) {
     window.location.href = 'login.html';
 }
 
-const API_BASE_URL = 'https://calisthenics-app-rnsz.onrender.com';
+const API_BASE_URL = '';
 const token = localStorage.getItem('token');
 
 const exercises = [

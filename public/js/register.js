@@ -1,4 +1,4 @@
-const API_BASE_URL = 'https://calisthenics-app-rnsz.onrender.com';
+const API_BASE_URL = '';
 
 document.getElementById('registerForm').addEventListener('submit', async (e) => {
     e.preventDefault();
