@@ -6,9 +6,9 @@ require('dotenv').config();
 const app = express();
 const PORT = process.env.PORT || 4000;
 
-// UPDATE THIS CORS CONFIGURATION
+// CORS
 app.use(cors({
-    origin: ['https://calitrack.pages.dev', 'http://localhost:3000'],
+    origin: ['https://calitrack.pages.dev', 'http://localhost:3000', 'http://localhost:4000'],
     credentials: true,
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization']
@@ -27,12 +27,37 @@ app.use('/api/workouts', require('./routes/workouts'));
 
 // Test endpoint
 app.get('/api/test', (req, res) => {
-    res.json({ 
-        message: '✅ API is working!', 
+    res.json({
+        message: '✅ API is working!',
         timestamp: new Date().toISOString(),
         status: 'online'
     });
 });
+
+// ==================== DB TEST ROUTE ====================
+app.get('/api/dbtest', async (req, res) => {
+    try {
+        const db = require('./database');
+        const [rows] = await db.query('SELECT 1 + 1 AS result');
+        res.json({
+            connected: true,
+            result: rows[0].result,
+            host: process.env.DB_HOST,
+            user: process.env.DB_USER,
+            database: process.env.DB_NAME
+        });
+    } catch (error) {
+        res.status(500).json({
+            connected: false,
+            error: error.message,
+            code: error.code,
+            host: process.env.DB_HOST,
+            user: process.env.DB_USER,
+            database: process.env.DB_NAME
+        });
+    }
+});
+// ========================================================
 
 // HTML Routes
 app.get('/', (req, res) => {
