@@ -2,7 +2,7 @@
     window.location.href = 'login.html';
 }
 
-const API = '';
+const API = 'https://calitrack-0hau.onrender.com';
 const token = localStorage.getItem('token');
 
 async function loadWorkouts() {

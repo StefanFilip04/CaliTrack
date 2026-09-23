@@ -1,4 +1,4 @@
-﻿const API_BASE_URL = 'https://calisthenics-app-rnsz.onrender.com';
+﻿const API_BASE_URL = 'https://calitrack-0hau.onrender.com';
 
 window.logout = function() {
     localStorage.clear();
