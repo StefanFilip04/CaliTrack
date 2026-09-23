@@ -2,7 +2,7 @@ if (!localStorage.getItem('token')) {
     window.location.href = 'login.html';
 }
 
-const API_BASE_URL = 'https://calitrack-0hau.onrender.com';
+const API_BASE_URL = 'https://calitrack-kj6l.onrender.com';
 const token = localStorage.getItem('token');
 
 const exercises = [
